@@ -219,10 +219,20 @@
 			<version>1.4</version>
 		</dependency>
 
+		<!-- JSch 是SSH2的一个纯Java实现。它允许你连接到一个sshd 服务器，使用端口转发，X11转发，文件传输等等。 -->
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+			<version>0.1.53</version>
+		</dependency>
+
+		<!-- Mybatis 分页插件 -->
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper</artifactId>
 			<version>3.7.5</version>
 		</dependency>
+
+
 	</dependencies>
 </project>
