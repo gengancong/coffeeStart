@@ -1,4 +1,4 @@
-package com.coffee.test.validator;
+package com.coffee.study.course.validator;
 
 import java.util.Date;
 
@@ -27,7 +27,7 @@ import org.hibernate.validator.constraints.SafeHtml;
 import org.hibernate.validator.constraints.SafeHtml.WhiteListType;
 import org.hibernate.validator.constraints.URL;
 
-public class Car {
+public class CarInfo {
 
 	/** Boolean, boolean */
 	@AssertFalse(message = "field1只能为false!")
@@ -91,7 +91,7 @@ public class Car {
 	private String field21;
 	@Email(message = "field22不是一个合法的电子邮件地址!")
 	private String field22;
-	@Length(min = 2, max = 10, message = "field23长度需要在2和10之间!")
+	@Length(min = 4, max = 10, message = "field23长度需要在2和10之间!")
 	private String field23;
 	@NotBlank(message = "field24不能为空!")
 	private String field24;
@@ -119,7 +119,7 @@ public class Car {
 	@URL(protocol = "", host = "", port = 8080, regexp = "", flags = {})
 	private String field29;
 
-	public Car() {
+	public CarInfo() {
 	}
 
 	public Boolean getField1() {
